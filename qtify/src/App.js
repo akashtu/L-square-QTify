@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Button from "./Button";
+import Navbar from "./Component/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <Button />
+    <div>
+      <Navbar />
     </div>
   );
 }
