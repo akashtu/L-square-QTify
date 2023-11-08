@@ -1,0 +1,26 @@
+.text-color {
+  color: white;
+  height: 100px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  line-height: 1;
+}
+
+.heroalign {
+  width: 799px;
+  height: 212px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  /* justify-content: space-between */
+  /* margin-top: 103px; */
+  /* margin-top: 15px; */
+}
+.logo-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
