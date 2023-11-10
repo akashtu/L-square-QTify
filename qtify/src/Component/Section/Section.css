@@ -1,0 +1,21 @@
+.section-wraper {
+  width: 100%;
+  height: 592px;
+  margin-left: 31px;
+}
+
+.Section-img {
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: 12px;
+  width: 100%;
+  row-gap: 35px;
+  column-gap: 40px;
+}
+.Section-content {
+  color: white;
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
