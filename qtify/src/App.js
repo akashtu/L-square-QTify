@@ -1,6 +1,5 @@
 import Navbar from "./Component/Navbar/Navbar";
 import HeroImage from "./Component/HeroImage/HeroImage";
-// import Card from "./Component/Card/Card";
 import "./App.css";
 import Section from "./Component/Section/Section";
 import { useEffect, useState } from "react";
