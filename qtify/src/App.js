@@ -4,10 +4,12 @@ import "./App.css";
 import Section from "./Component/Section/Section";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Song from "./Component/Song/Song";
 
 function App() {
   const [topAlbums, setTopAlbums] = useState([]);
   const [newAlbums, setNewAlbums] = useState([]);
+  // const [songs, setSongs] = useState([]);
 
   const functionTopApi = async () => {
     let URL = "https://qtify-backend-labs.crio.do/albums/top";
@@ -21,9 +23,16 @@ function App() {
     setNewAlbums(response.data);
   };
 
+  // const functionNewSongs = async () => {
+  //   let URL = "https://qtify-backend-labs.crio.do/songs";
+  //   let response = await axios.get(URL);
+  //   setSongs(response.data);
+  // };
+
   useEffect(() => {
     functionTopApi();
     functionNewApi();
+    // functionNewSongs();
   }, []);
 
   return (
@@ -34,6 +43,7 @@ function App() {
       </div>
       <Section text="Top Albums" data={topAlbums} />
       <Section text="New Albums" data={newAlbums} />
+      <Song text="Songs" />
     </div>
   );
 }
