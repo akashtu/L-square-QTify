@@ -43,7 +43,9 @@ function App() {
       </div>
       <Section text="Top Albums" data={topAlbums} />
       <Section text="New Albums" data={newAlbums} />
-      <Song text="Songs" />
+      <div className="song-container">
+        <Song />
+      </div>
     </div>
   );
 }

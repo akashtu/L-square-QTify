@@ -1,3 +1,11 @@
 .heroimage {
   height: 270px;
 }
+
+.song-container {
+  border: 1px solid green;
+  height: 381px;
+  width: 100%;
+  border-left: none;
+  margin-top: 12px;
+}

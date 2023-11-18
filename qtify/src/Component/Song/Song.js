@@ -88,36 +88,39 @@ function Song() {
   };
 
   return (
-    <Box sx={{ width: "100%", color: "white" }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-        >
-          <Tab label="All" {...a11yProps(0)} />
-          <Tab label="Rock" {...a11yProps(1)} />
-          <Tab label="Pop" {...a11yProps(2)} />
-          <Tab label="Jazz" {...a11yProps(3)} />
-          <Tab label="Blues" {...a11yProps(4)} />
-        </Tabs>
+    <div>
+      <div className="text2-color">Songs</div>
+      <Box sx={{ width: "100%", color: "white" }}>
+        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="basic tabs example"
+          >
+            <Tab label="All" {...a11yProps(0)} />
+            <Tab label="Rock" {...a11yProps(1)} />
+            <Tab label="Pop" {...a11yProps(2)} />
+            <Tab label="Jazz" {...a11yProps(3)} />
+            <Tab label="Blues" {...a11yProps(4)} />
+          </Tabs>
+        </Box>
+        <CustomTabPanel value={value} index={0}>
+          <Slider data={albums} />
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={1}>
+          <Slider data={categoryData.rock} />
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={2}>
+          <Slider data={categoryData.pop} />
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={3}>
+          <Slider data={categoryData.jazz} />
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={4}>
+          <Slider data={categoryData.blues} />
+        </CustomTabPanel>
       </Box>
-      <CustomTabPanel value={value} index={0}>
-        <Slider data={albums} />
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
-        <Slider data={categoryData.rock} />
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
-        <Slider data={categoryData.pop} />
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={3}>
-        <Slider data={categoryData.jazz} />
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={4}>
-        <Slider data={categoryData.blues} />
-      </CustomTabPanel>
-    </Box>
+    </div>
   );
 }
 
