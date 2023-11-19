@@ -7,8 +7,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import SongCard from "../Card/SongCard";
+// import SongCard from "../Card/SongCard";
 
-const SongCarousel = ({ data, swiperId }) => {
+const SongCarousel = ({ data1, swiperId }) => {
   const swiperRef = useRef(null);
 
   const handlePrev = () => {
@@ -36,7 +37,7 @@ const SongCarousel = ({ data, swiperId }) => {
         virtual
         onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
-        {data.map((value) => (
+        {data1.map((value) => (
           <SwiperSlide key={value.id}>
             <SongCard
               title={value.title}

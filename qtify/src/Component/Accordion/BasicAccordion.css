@@ -1,0 +1,32 @@
+.accordion-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.accordion {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 10px !important;
+}
+
+.accordion-summary {
+  background-color: black !important;
+}
+.typography {
+  color: white;
+}
+
+.accordion-width {
+  width: 80%;
+}
+
+.MuiSvgIcon-root {
+  color: green;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.heading-color {
+  color: white;
+  text-align: center;
+}

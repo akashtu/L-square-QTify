@@ -105,19 +105,19 @@ function Song() {
           </Tabs>
         </Box>
         <CustomTabPanel value={value} index={0}>
-          <Slider data={albums} />
+          <Slider data1={albums} />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
-          <Slider data={categoryData.rock} />
+          <Slider data1={categoryData.rock} />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
-          <Slider data={categoryData.pop} />
+          <Slider data1={categoryData.pop} />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={3}>
-          <Slider data={categoryData.jazz} />
+          <Slider data1={categoryData.jazz} />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={4}>
-          <Slider data={categoryData.blues} />
+          <Slider data1={categoryData.blues} />
         </CustomTabPanel>
       </Box>
     </div>

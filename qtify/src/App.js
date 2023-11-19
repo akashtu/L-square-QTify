@@ -5,6 +5,7 @@ import Section from "./Component/Section/Section";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Song from "./Component/Song/Song";
+import BasicAccordion from "./Component/Accordion/BasicAccordion";
 
 function App() {
   const [topAlbums, setTopAlbums] = useState([]);
@@ -46,6 +47,7 @@ function App() {
       <div className="song-container">
         <Song />
       </div>
+      <BasicAccordion />
     </div>
   );
 }
