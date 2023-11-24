@@ -10,12 +10,14 @@ import BasicAccordion from "./Component/Accordion/BasicAccordion";
 function App() {
   const [topAlbums, setTopAlbums] = useState([]);
   const [newAlbums, setNewAlbums] = useState([]);
+  const [totalSongs, setTotalSongs] = useState(null);
   // const [songs, setSongs] = useState([]);
 
   const functionTopApi = async () => {
     let URL = "https://qtify-backend-labs.crio.do/albums/top";
     let response = await axios.get(URL);
     setTopAlbums(response.data);
+    setTotalSongs(response.data.songs.length);
   };
 
   const functionNewApi = async () => {

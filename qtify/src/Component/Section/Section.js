@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 import "./Section.css";
 import { useState } from "react";
 import Carousel from "../Carousel/Carousel";
-const Section = ({ data, text }) => {
+const Section = ({ data, text, totalSongs }) => {
   const [toCollapse, setToCollapse] = useState(true);
   return (
     <div className="section-wraper">
@@ -29,6 +29,7 @@ const Section = ({ data, text }) => {
                 title={value.title}
                 follows={value.follows}
                 image={value.image}
+                songs={value.songs.length}
               />
             );
           })}

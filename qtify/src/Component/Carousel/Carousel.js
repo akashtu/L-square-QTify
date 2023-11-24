@@ -41,6 +41,7 @@ const Carousel = ({ data, swiperId }) => {
               title={value.title}
               follows={value.follows}
               image={value.image}
+              songs={value.songs.length}
             />
           </SwiperSlide>
         ))}
